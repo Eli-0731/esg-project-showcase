@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="智能企業永續平台：以永續金融為核心，結合生成式 AI、MySQL 與 Power BI 的發展構想，從資料整理出發，逐步連結 ESG 指標管理與決策支援。">
+    <meta name="theme-color" content="#173d32">
+    <title>系統展示 02・AI 品質檢查｜智能企業永續平台 ESG DATA LAB</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">跳至主要內容</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="index.htm">
+          <svg viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M8 31V16L20 8l12 8v15M8 23l12-8 12 8M20 15v19"/>
+            <path d="M13 27l7-5 7 5"/>
+          </svg>
+          <span>智能企業永續平台<span class="brand-en">ESG DATA LAB</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">選單 <span>＋</span></button>
+        <nav id="site-nav" aria-label="主選單">
+          <a href="index.htm">專題簡介</a>
+          <a href="team.htm">組員資料</a>
+          <a href="system01.htm" aria-current="page">系統展示</a>
+          <a class="nav-cta" href="system01.htm">探索系統 <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-hero wrap system-hero">
+        <p class="eyebrow">SYSTEM TOUR / AI QUALITY CHECK</p>
+        <div class="page-hero-grid">
+          <h1>讓資料問題，<br>被<em>清楚看見。</em></h1>
+          <div>
+            <p class="tour-index">02 <span>/ 04</span></p>
+            <p>AI 提出整理建議，人確認資料意義；將每一次修改建立在可檢視的理由上。</p>
+          </div>
+        </div>
+      </section>
+      <nav class="step-nav wrap" aria-label="系統展示分頁">
+        <a href="system01.htm"><span>01</span>檔案上傳<span aria-hidden="true">↗</span></a>
+        <a href="system02.htm" aria-current="page"><span>02</span>AI 檢查<span aria-hidden="true">↗</span></a>
+        <a href="system03.htm"><span>03</span>人工修改<span aria-hidden="true">↗</span></a>
+        <a href="system04.htm"><span>04</span>匯入與查閱<span aria-hidden="true">↗</span></a>
+      </nav>
+      <section class="section wrap tour-layout">
+        <div class="tour-copy">
+          <p class="eyebrow">ASSIST, THEN CONFIRM</p>
+          <h2>問題先看見，<br>修改再決定。</h2>
+          <p>AI 協助分成兩層：初步品質檢查指出格式問題；新增的欄位辨識則根據標題與前 8 列樣本，建議指標、年度、數值、分類及目標欄位。使用者確認對應後，程式才將整張表的所選欄位轉成分析資料。</p>
+          <ol class="numbered-list">
+            <li>
+              <span>1</span>
+              <div>
+                <h3>選擇檢查方式</h3>
+                <p>已實測本機 Qwen GGUF；也保留 OpenAI 選項，需另行設定。人工檢查則需填寫原因並確認。</p>
+              </div>
+            </li>
+            <li>
+              <span>2</span>
+              <div>
+                <h3>閱讀問題與建議</h3>
+                <p>檢視問題摘要、樣本涵蓋範圍，以及每個建議的原值、建議值與理由。</p>
+              </div>
+            </li>
+            <li>
+              <span>3</span>
+              <div>
+                <h3>只套用勾選項目</h3>
+                <p>先確認格式建議，再於分析建模區檢查 AI 的欄位對應。公司、組織範圍與單位仍須核對來源，未確定內容不能任意填入。</p>
+              </div>
+            </li>
+          </ol>
+          <div class="tip">
+            <b>抽樣檢查 ≠ 全表驗證</b>
+            <p>初步品質檢查預設抽樣 80 格；欄位辨識最多參考前 8 列。轉換與規則驗證則會處理所選欄位的全部資料列，AI 樣本判斷仍需人工確認。</p>
+          </div>
+        </div>
+        <figure class="screen-figure long-shot">
+          <div class="screen-bar">
+            <span class="window-dots" aria-hidden="true">● ● ●</span>
+            <span>ESG WORKSPACE / 實際系統畫面</span>
+            <span aria-hidden="true">↗</span>
+          </div>
+          <button class="screen-open" type="button" data-image="assets/ai-result.png" data-caption="本機 Qwen 的資料品質分析與可勾選整理建議" aria-label="放大：本機 Qwen 的資料品質分析與可勾選整理建議">
+            <img src="assets/ai-result.png" alt="本機 Qwen 的資料品質分析與可勾選整理建議" loading="lazy">
+            <span class="zoom-hint">點擊放大 ↗</span>
+          </button>
+          <figcaption>圖 02｜實際本地模型測試結果；完整長圖可點擊放大，查看原值、建議值及確認區。</figcaption>
+        </figure>
+      </section>
+      <section class="wrap insight-panel">
+        <div>
+          <p class="eyebrow">HUMAN IN THE LOOP</p>
+          <h2>自動提出建議，<br>保留人工決策。</h2>
+        </div>
+        <div>
+          <p>AI 只提出欄位對應，不生成分析數值。程式驗證年度、必填欄位、明細／合計、實績／目標與重複粒度；缺值保持 NULL，需排除的資料必須留下原因。</p>
+          <p>本地模式使用電腦上的模型服務；OpenAI 模式必須由使用者選用並完成設定。兩種模式的資料處理位置不同，應依情境選擇。</p>
+          <span class="outline-tag">LOCAL QWEN / 已完成本地測試</span>
+          <span class="outline-tag">OPENAI / 保留可設定模式</span>
+        </div>
+      </section>
+      <div class="wrap system-pagination">
+        <a href="system01.htm">← 上一個階段</a>
+        <a href="system03.htm"><small>NEXT STEP</small>人工修改 ↗</a>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="brand" href="index.htm">
+          <svg viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M8 31V16L20 8l12 8v15M8 23l12-8 12 8M20 15v19"/>
+            <path d="M13 27l7-5 7 5"/>
+          </svg>
+          <span>智能企業永續平台<span class="brand-en">ESG DATA LAB</span></span>
+        </a>
+        <p>每一份資料，都值得被好好理解。</p>
+        <a href="#top">回到頂端 ↑</a>
+      </div>
+      <div class="footer-bottom">
+        <span>STATIC WEBSITE / 2026</span>
+      </div>
+    </footer>
+    <dialog id="image-dialog" aria-labelledby="image-title">
+      <div class="dialog-toolbar">
+        <p id="image-title">系統畫面</p>
+        <button type="button" id="close-image" aria-label="關閉放大畫面">關閉 ×</button>
+      </div>
+      <img id="expanded-image" alt="">
+    </dialog>
+  </body>
+</html>

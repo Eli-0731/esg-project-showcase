@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="智能企業永續平台：以永續金融為核心，結合生成式 AI、MySQL 與 Power BI 的發展構想，從資料整理出發，逐步連結 ESG 指標管理與決策支援。">
+    <meta name="theme-color" content="#173d32">
+    <title>系統展示 03・預覽與修改｜智能企業永續平台 ESG DATA LAB</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">跳至主要內容</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="index.htm">
+          <svg viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M8 31V16L20 8l12 8v15M8 23l12-8 12 8M20 15v19"/>
+            <path d="M13 27l7-5 7 5"/>
+          </svg>
+          <span>智能企業永續平台<span class="brand-en">ESG DATA LAB</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">選單 <span>＋</span></button>
+        <nav id="site-nav" aria-label="主選單">
+          <a href="index.htm">專題簡介</a>
+          <a href="team.htm">組員資料</a>
+          <a href="system01.htm" aria-current="page">系統展示</a>
+          <a class="nav-cta" href="system01.htm">探索系統 <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-hero wrap system-hero">
+        <p class="eyebrow">SYSTEM TOUR / HUMAN REVIEW</p>
+        <div class="page-hero-grid">
+          <h1>讓最後一哩，<br>留給<em>人的判斷。</em></h1>
+          <div>
+            <p class="tour-index">03 <span>/ 04</span></p>
+            <p>從整張工作表到單一儲存格，確認資料真正表達的意義，再完成匯入。</p>
+          </div>
+        </div>
+      </section>
+      <nav class="step-nav wrap" aria-label="系統展示分頁">
+        <a href="system01.htm"><span>01</span>檔案上傳<span aria-hidden="true">↗</span></a>
+        <a href="system02.htm"><span>02</span>AI 檢查<span aria-hidden="true">↗</span></a>
+        <a href="system03.htm" aria-current="page"><span>03</span>人工修改<span aria-hidden="true">↗</span></a>
+        <a href="system04.htm"><span>04</span>匯入與查閱<span aria-hidden="true">↗</span></a>
+      </nav>
+      <section class="section wrap">
+        <div class="wide-tour-head">
+          <div>
+            <p class="eyebrow">REVIEW & EDIT</p>
+            <h2>每一格，都能再確認。</h2>
+          </div>
+          <p>進入預覽後，使用者可以選取工作表、調整標題列，並直接點擊儲存格修改內容。AI 建議之後，仍保留完整的人工作業空間。</p>
+        </div>
+        <figure class="screen-figure ">
+          <div class="screen-bar">
+            <span class="window-dots" aria-hidden="true">● ● ●</span>
+            <span>ESG WORKSPACE / 實際系統畫面</span>
+            <span aria-hidden="true">↗</span>
+          </div>
+          <button class="screen-open" type="button" data-image="assets/edit-preview.png" data-caption="套用部分 AI 建議後，手動修改儲存格的預覽畫面" aria-label="放大：套用部分 AI 建議後，手動修改儲存格的預覽畫面">
+            <img src="assets/edit-preview.png" alt="套用部分 AI 建議後，手動修改儲存格的預覽畫面" loading="lazy">
+            <span class="zoom-hint">點擊放大 ↗</span>
+          </button>
+          <figcaption>圖 03｜實際模擬 CSV 測試；黃色儲存格顯示手動修改的內容。</figcaption>
+        </figure>
+        <div class="detail-grid edit-details">
+          <article>
+            <p class="eyebrow">01 / SELECT</p>
+            <h3>選擇資料範圍</h3>
+            <p>選取需要的工作表、確認標題列，保留報告中的說明與來源位置。</p>
+          </article>
+          <article>
+            <p class="eyebrow">02 / EDIT</p>
+            <h3>修改內容與型別</h3>
+            <p>文字、數值、日期、布林或清空內容，可依資料意義選擇；也能還原單格或全部修改。</p>
+          </article>
+          <article>
+            <p class="eyebrow">03 / CONFIRM</p>
+            <h3>核對後才匯入</h3>
+            <p>原始檔不覆寫。確認工作表後，還需設定分析欄位、處理阻擋問題及確認資料集完整版本，才可匯入 MySQL。</p>
+          </article>
+        </div>
+      </section>
+      <section class="soft-section">
+        <div class="wrap secondary-tour">
+          <div>
+            <p class="eyebrow">CELL EDITOR</p>
+            <h2>小到一格，<br>也能仔細調整。</h2>
+            <p>編輯視窗將資料類型與內容分開呈現，避免把代碼誤當數值，或忽略日期的格式。</p>
+            <p class="small muted">此圖為早期儲存格編輯測試截圖，背景含當時的資料庫連線提示，主要展示編輯視窗。</p>
+            <div class="tip">
+              <b>目前的操作限制</b>
+              <p>修改暫存約 15 分鐘，後端重啟會清除待匯入內容。公式若被修改會轉成固定值，網頁不重新計算公式。</p>
+            </div>
+          </div>
+          <figure class="screen-figure ">
+            <div class="screen-bar">
+              <span class="window-dots" aria-hidden="true">● ● ●</span>
+              <span>ESG WORKSPACE / 實際系統畫面</span>
+              <span aria-hidden="true">↗</span>
+            </div>
+            <button class="screen-open" type="button" data-image="assets/cell-editor.png" data-caption="儲存格編輯視窗，可選擇資料類型、輸入內容、套用或還原" aria-label="放大：儲存格編輯視窗，可選擇資料類型、輸入內容、套用或還原">
+              <img src="assets/cell-editor.png" alt="儲存格編輯視窗，可選擇資料類型、輸入內容、套用或還原" loading="lazy">
+              <span class="zoom-hint">點擊放大 ↗</span>
+            </button>
+            <figcaption>圖 03-B｜儲存格編輯功能實測畫面。</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="section wrap" id="analysis-model"><div class="section-label"><span>ANALYSIS DATA MODEL</span><span>從表格，整理到可以做圖</span></div><div class="wide-tour-head"><div><p class="eyebrow">MAP → VALIDATE → CONFIRM</p><h2>每一筆數值，<br>都帶著明確的意義。</h2></div><p>新增分析資料預覽：將橫向年度展開，確認公司、組織範圍、指標、分類與單位，區分基準、實績／目標及明細／合計。下表為格式示意，不是實際客戶數據。</p></div><div class="model-table"><table class="demo-table"><thead><tr><th>公司／範圍</th><th>指標</th><th>年度</th><th>單位</th><th>分析值</th><th>性質</th></tr></thead><tbody><tr><td>範例公司／個體</td><td>範疇一排放</td><td>2024</td><td>tCO2e</td><td>10</td><td>實績・明細</td></tr><tr><td>範例公司／個體</td><td>範疇一排放</td><td>2025</td><td>tCO2e</td><td>9</td><td>實績・明細</td></tr><tr><td>範例公司／個體</td><td>範疇一排放</td><td>2025</td><td>tCO2e</td><td>8</td><td>目標・明細</td></tr><tr><td>範例公司／個體</td><td>綠色金融占比</td><td>2025</td><td>%</td><td>0.25</td><td>實績・不可直接加總</td></tr></tbody></table></div><div class="detail-grid edit-details"><article><p class="eyebrow">SEMANTICS</p><h3>確認欄位與計算口徑</h3><p>AI 可提出對應建議，使用者仍可修正。市場與地區基準分開，公升與電度不混加，百分比按設定轉成可格式化的小數。</p></article><article><p class="eyebrow">QUALITY GATE</p><h3>問題有明確去向</h3><p>缺少公司、範圍、年度或單位，以及相同指標粒度重複時，會阻擋匯入。資料須修正，或填寫原因明確排除；缺值不補零。</p></article><article><p class="eyebrow">POWER BI</p><h3>資料版本與圖表分工</h3><p>同一資料集以最新完整版本提供查詢。明細實績、目標與完整紀錄分成不同檢視表，製圖時仍需正確篩選指標、單位及基準。</p></article></div></section><div class="wrap system-pagination">
+        <a href="system02.htm">← 上一個階段</a>
+        <a href="system04.htm"><small>NEXT STEP</small>匯入與查閱 ↗</a>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="brand" href="index.htm">
+          <svg viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M8 31V16L20 8l12 8v15M8 23l12-8 12 8M20 15v19"/>
+            <path d="M13 27l7-5 7 5"/>
+          </svg>
+          <span>智能企業永續平台<span class="brand-en">ESG DATA LAB</span></span>
+        </a>
+        <p>每一份資料，都值得被好好理解。</p>
+        <a href="#top">回到頂端 ↑</a>
+      </div>
+      <div class="footer-bottom">
+        <span>STATIC WEBSITE / 2026</span>
+      </div>
+    </footer>
+    <dialog id="image-dialog" aria-labelledby="image-title">
+      <div class="dialog-toolbar">
+        <p id="image-title">系統畫面</p>
+        <button type="button" id="close-image" aria-label="關閉放大畫面">關閉 ×</button>
+      </div>
+      <img id="expanded-image" alt="">
+    </dialog>
+  </body>
+</html>
